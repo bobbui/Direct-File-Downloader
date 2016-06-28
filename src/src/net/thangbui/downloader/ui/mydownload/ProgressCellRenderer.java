@@ -18,9 +18,9 @@ import java.awt.*;
 /**
  * @author Nguyen Thang
  */
-public class ProgressCellRenderer extends AbstractCellEditor implements TableCellRenderer, TableCellEditor {
+class ProgressCellRenderer extends AbstractCellEditor implements TableCellRenderer, TableCellEditor {
 
-    private ProgressCell progressCell;
+    private final ProgressCell progressCell;
 
     public ProgressCellRenderer() {
         progressCell = new ProgressCell();

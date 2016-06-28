@@ -50,9 +50,8 @@ public class FileUtils {
     }
 
     public static String fromBytesToSizeString(long bytes, boolean isIncludeFloatPoint) {
-        double num        = 0;
-        String unit       = "";
-        double bytes_long = (double) bytes;
+        double num  = 0;
+        String unit = "";
         if (bytes < org.apache.commons.io.FileUtils.ONE_KB) {
             num = bytes;
             unit = "bytes";

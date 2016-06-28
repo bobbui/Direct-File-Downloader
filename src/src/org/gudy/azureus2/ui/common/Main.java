@@ -10,6 +10,7 @@ import com.aelitis.azureus.core.AzureusCoreException;
 import com.aelitis.azureus.core.AzureusCoreFactory;
 import com.aelitis.azureus.core.impl.AzureusCoreSingleInstanceClient;
 import com.aelitis.azureus.launcher.Launcher;
+import net.thangbui.downloader.utils.HttpUtils;
 import org.apache.commons.cli.*;
 import org.apache.log4j.Appender;
 import org.apache.log4j.ConsoleAppender;
@@ -38,6 +39,9 @@ public class Main {
     public static StartServer start = null;
     public static AzureusCore core;
 
+    static {
+        HttpUtils.bypassHTTPSvalidation();
+    }
     private static CommandLine parseCommands(String[] args, boolean constart) {
 
         if (args == null) {

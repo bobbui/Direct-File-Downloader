@@ -26,8 +26,8 @@ import java.io.File;
  */
 class DownloadButtonCellRenderer extends CellEditorRender implements TableCellRenderer {
 
-    Item item;
-    private DownloadButtonCell searchResultActionCellPanel;
+    private       Item               item;
+    private final DownloadButtonCell searchResultActionCellPanel;
 
     public DownloadButtonCellRenderer(JCheckBox checkBox) {
         super(checkBox);

@@ -11,7 +11,7 @@
  * and open the template in the editor.
  */
 package net.thangbui.downloader.ui.mydownload;
-public class ProgressCell extends javax.swing.JPanel {
+class ProgressCell extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public  javax.swing.JProgressBar jProgressBar;

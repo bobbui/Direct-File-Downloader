@@ -18,20 +18,20 @@ import java.awt.font.TextAttribute;
 /**
  * @author Nguyen Thang
  */
-public class SearchFilter extends javax.swing.JPanel {
+class SearchFilter extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JToggleButton jToggleButton18;
-    public javax.swing.JToggleButton jToggleButtonALL;
-    public javax.swing.JToggleButton jToggleButtonBook;
-    public javax.swing.JToggleButton jToggleButtonGame;
-    public javax.swing.JToggleButton jToggleButtonMovies;
-    public javax.swing.JToggleButton jToggleButtonMusic;
-    public javax.swing.JToggleButton jToggleButtonOther;
-    public javax.swing.JToggleButton jToggleButtonSoftware;
-    public javax.swing.JToggleButton jToggleButtonTV;
+    public        javax.swing.JToggleButton jToggleButtonALL;
+    public        javax.swing.JToggleButton jToggleButtonBook;
+    public        javax.swing.JToggleButton jToggleButtonGame;
+    public        javax.swing.JToggleButton jToggleButtonMovies;
+    public        javax.swing.JToggleButton jToggleButtonMusic;
+    public        javax.swing.JToggleButton jToggleButtonOther;
+    public        javax.swing.JToggleButton jToggleButtonSoftware;
+    public        javax.swing.JToggleButton jToggleButtonTV;
     // End of variables declaration//GEN-END:variables
-    JToggleButton[] buttons;
+    private final JToggleButton[]           buttons;
 
     /**
      * Creates new form SearchFilterPanel
@@ -228,7 +228,7 @@ public class SearchFilter extends javax.swing.JPanel {
         MainUI.getInstance().searchResultPanel.filterCategory(Item.CATEGORY_BOOK);
     }//GEN-LAST:event_jToggleButtonBookActionPerformed
 
-    public void deselectAll() {
+    private void deselectAll() {
         for (JToggleButton jToggleButton : buttons) {
             jToggleButton.setSelected(false);
         }

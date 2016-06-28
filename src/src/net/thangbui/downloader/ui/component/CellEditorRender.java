@@ -15,9 +15,9 @@ import javax.swing.*;
  */
 public class CellEditorRender extends DefaultCellEditor {
 
-    public boolean isPushed;
+    protected boolean isPushed;
 
-    public CellEditorRender(JCheckBox checkBox) {
+    protected CellEditorRender(JCheckBox checkBox) {
         super(checkBox);
     }
 

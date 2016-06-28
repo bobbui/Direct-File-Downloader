@@ -23,8 +23,8 @@ import java.util.List;
  * @author Nguyen Thang
  */
 public class Main {
-    public static final List<Category> CATEGORYS = Category.load();
-    private static      Logger         LOG       = Logger.getRootLogger();
+    public static final  List<Category> CATEGORYS = Category.load();
+    private static final Logger         LOG       = Logger.getRootLogger();
 
     public static void main(String args[]) throws ClassNotFoundException,
             UnsupportedLookAndFeelException, InstantiationException,
@@ -39,11 +39,11 @@ public class Main {
                     MainUI.getInstance().setVisible(true);
                 } catch (InstantiationException ex) {
                     LOG.error("", ex);
-                } catch (ClassNotFoundException ex) {
+                } catch (UnsupportedLookAndFeelException ex) {
                     LOG.error("", ex);
                 } catch (IllegalAccessException ex) {
                     LOG.error("", ex);
-                } catch (UnsupportedLookAndFeelException ex) {
+                } catch (ClassNotFoundException ex) {
                     LOG.error("", ex);
                 }
             }
@@ -105,7 +105,7 @@ public class Main {
         }
     }
 
-    protected static Image createImage(String path, String description) {
+    private static Image createImage(String path, String description) {
         URL imageURL = Main.class.getResource(path);
 
         if (imageURL == null) {

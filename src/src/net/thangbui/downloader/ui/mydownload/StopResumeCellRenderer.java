@@ -24,36 +24,31 @@ import java.io.IOException;
 /**
  * @author Nguyen Thang
  */
-public class StopResumeCellRenderer extends CellEditorRender implements TableCellRenderer, TableCellEditor {
+class StopResumeCellRenderer extends CellEditorRender implements TableCellRenderer, TableCellEditor {
 
     private static final Logger LOG = Logger.getLogger(StopResumeCellRenderer.class);
-    Download download;
-    private StopResumeCell myDownloadActionCell;
+    private       Download       download;
+    private final StopResumeCell myDownloadActionCell;
 
     public StopResumeCellRenderer(JCheckBox checkBox) {
         super(checkBox);
-
-        System.out.println("StopResumeCellRenderer");
 
         myDownloadActionCell = new StopResumeCell();
         myDownloadActionCell.jButtonOpen.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                System.out.println(" myDownloadActionCell.jLabelOpen.addMouseListener fireEditingStopped");
                 fireEditingStopped();
             }
         });
         myDownloadActionCell.jButtonPause.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                System.out.println(" myDownloadActionCell.jLabelPause.addMouseListener fireEditingStopped");
                 fireEditingStopped();
             }
         });
         myDownloadActionCell.jButtonResume.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                System.out.println(" myDownloadActionCell.jLabelResume.addMouseListener fireEditingStopped");
                 fireEditingStopped();
             }
         });
@@ -61,28 +56,20 @@ public class StopResumeCellRenderer extends CellEditorRender implements TableCel
 
     @Override
     public Component getTableCellRendererComponent(JTable jtable, final Object o, boolean bln, boolean bln1, final int i, int i1) {
-//        System.out.println("getTableCellRendererComponent row : " + i + " column: " + i1 + " " + o);
-
-        download = (Download) o;
-        myDownloadActionCell.jButtonOpen.setVisible(false);
-        myDownloadActionCell.jButtonPause.setVisible(false);
-        myDownloadActionCell.jButtonResume.setVisible(false);
-        if (download.downloadingPausedCompleteFlag == Download.FLAG_COMPLETED) {
-            myDownloadActionCell.jButtonOpen.setVisible(true);
-        } else if (download.downloadingPausedCompleteFlag == Download.FLAG_DOWNLOADING) {
-            myDownloadActionCell.jButtonPause.setVisible(true);
-        } else if (download.downloadingPausedCompleteFlag == Download.FLAG_PAUSED) {
-            myDownloadActionCell.jButtonResume.setVisible(true);
-        }
+        setButtonAction((Download) o);
         return myDownloadActionCell;
     }
 
     @Override
     public Component getTableCellEditorComponent(JTable jtable, Object o, boolean bln, final int i, int i1) {
-//        System.out.println("getTableCellRendererComponent row : " + i + " column: " + i1 + " " + o);
+        setButtonAction((Download) o);
 
-        download = (Download) o;
+        isPushed = true;
+        return myDownloadActionCell;
+    }
 
+    private void setButtonAction(Download o) {
+        download = o;
         myDownloadActionCell.jButtonOpen.setVisible(false);
         myDownloadActionCell.jButtonPause.setVisible(false);
         myDownloadActionCell.jButtonResume.setVisible(false);
@@ -93,18 +80,12 @@ public class StopResumeCellRenderer extends CellEditorRender implements TableCel
         } else if (download.downloadingPausedCompleteFlag == Download.FLAG_PAUSED) {
             myDownloadActionCell.jButtonResume.setVisible(true);
         }
-
-        isPushed = true;
-        return myDownloadActionCell;
     }
 
     @Override
     public Object getCellEditorValue() {
-//        System.out.println("getCellEditorValue" + download.downloadingPausedCompleteFlag
-//                + " : " + download.title + " isPushed : " + isPushed);
         if (isPushed) {
             if (download.downloadingPausedCompleteFlag == Download.FLAG_COMPLETED) {
-//                System.out.println("getCellEditorValue  FLAG_COMPLETED ");
                 try {
                     Desktop.getDesktop().open(download.dm.getAbsoluteSaveLocation());
                 } catch (IOException e) {
@@ -112,7 +93,6 @@ public class StopResumeCellRenderer extends CellEditorRender implements TableCel
                     e.printStackTrace();
                 }
             } else if (download.downloadingPausedCompleteFlag == Download.FLAG_DOWNLOADING) {
-//                System.out.println("getCellEditorValue  FLAG_DOWNLOADING ");
 
                 try {
                     DownloadController.stop(download.dm);
@@ -123,7 +103,6 @@ public class StopResumeCellRenderer extends CellEditorRender implements TableCel
                     LOG.error("Can not stop download : " + download.title, e);
                 }
             } else if (download.downloadingPausedCompleteFlag == Download.FLAG_PAUSED) {
-//                System.out.println("getCellEditorValue  FLAG_PAUSED ");
                 try {
                     DownloadController.start(download.dm);
 //                            MainUI.getInstance().myDownloadPanel.refreshCompletely();
@@ -135,7 +114,6 @@ public class StopResumeCellRenderer extends CellEditorRender implements TableCel
             }
         }
         isPushed = false;
-
         return download;
     }
 }

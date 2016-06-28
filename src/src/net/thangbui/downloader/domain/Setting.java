@@ -8,6 +8,6 @@
 
 package net.thangbui.downloader.domain;
 
-public class Setting {
+class Setting {
 
 }

@@ -19,15 +19,15 @@ import java.awt.font.TextAttribute;
 /**
  * @author Nguyen Thang
  */
-public class MyDownloadFilter extends javax.swing.JPanel {
+class MyDownloadFilter extends javax.swing.JPanel {
 
-    public  javax.swing.JToggleButton jToggleButtonALL;
-    public  javax.swing.JToggleButton jToggleButtonCompleted;
-    public  javax.swing.JToggleButton jToggleButtonDownloading;
+    public        javax.swing.JToggleButton jToggleButtonALL;
+    public        javax.swing.JToggleButton jToggleButtonCompleted;
+    public        javax.swing.JToggleButton jToggleButtonDownloading;
     // End of variables declaration//GEN-END:variables
-    JToggleButton[] buttons;
+    private final JToggleButton[]           buttons;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton       jButton1;
+    private       javax.swing.JButton       jButton1;
 
     /**
      * Creates new form SearchFilterPanel
@@ -140,7 +140,7 @@ public class MyDownloadFilter extends javax.swing.JPanel {
         MainUI.getInstance().myDownloadPanel.refreshCompletely();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    public void deselectAll() {
+    private void deselectAll() {
         for (JToggleButton jToggleButton : buttons) {
             jToggleButton.setSelected(false);
         }

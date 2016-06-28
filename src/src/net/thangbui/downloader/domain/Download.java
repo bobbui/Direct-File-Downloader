@@ -17,35 +17,35 @@ import java.text.NumberFormat;
 
 public class Download {
 
-    public static final int           FLAG_COMPLETED   = 1;
-    public static final int           FLAG_DOWNLOADING = 2;
-    public static final int           FLAG_PAUSED      = 3;
-    public static final int           FLAG_ERROR       = 4;
-    static              DecimalFormat df               = new DecimalFormat("0.00%");
-    public String          ETA;
-    public boolean         paused;
-    public String          state;
-    public DownloadManager dm;
-    public String          percent;
-    public String          speed;
-    public String          size;
-    public String          title;
-    public int             percentInt;
-    public int             downloadingPausedCompleteFlag;
-    public int     previousState;
-    public boolean stateChanged;
+    public static final  int           FLAG_COMPLETED   = 1;
+    public static final  int           FLAG_DOWNLOADING = 2;
+    public static final  int           FLAG_PAUSED      = 3;
+    private static final int           FLAG_ERROR       = 4;
+    private static final DecimalFormat df               = new DecimalFormat("0.00%");
+    public  String          ETA;
+    public  boolean         paused;
+    public  String          state;
+    public  DownloadManager dm;
+    public  String          percent;
+    public  String          speed;
+    public  String          size;
+    public  String          title;
+    public  int             percentInt;
+    public  int             downloadingPausedCompleteFlag;
+    private int             previousState;
+    public  boolean         stateChanged;
 
     public Download() {
     }
 
-    public static String formatPercentFromThousands(int thousands) {
+    private static String formatPercentFromThousands(int thousands) {
         NumberFormat percentage_format = NumberFormat.getPercentInstance();
         percentage_format.setMinimumFractionDigits(1);
         percentage_format.setMaximumFractionDigits(1);
         return percentage_format.format(thousands / 1000.0);
     }
 
-    public static String formatDownloadStatus(DownloadManager manager) {
+    private static String formatDownloadStatus(DownloadManager manager) {
         int state = manager.getState();
 
         String tmp = "";
@@ -62,33 +62,25 @@ public class Download {
             case DownloadManager.STATE_SEEDING: {
                 DiskManager diskManager = manager.getDiskManager();
                 if (diskManager != null) {
-
                     int mp = diskManager.getMoveProgress();
 
                     if (mp != -1) {
-
                         tmp = "Moving" + ": " + formatPercentFromThousands(mp);
-
                     } else {
                         int done = diskManager.getCompleteRecheckStatus();
 
                         if (done != -1) {
-
-//						tmp = "Seeding " + " + " + "Checking" + ": "
-//								+ formatPercentFromThousands(done);
                             tmp = "Completed " + " + " + "Checking" + ": "
                                     + formatPercentFromThousands(done);
                         }
                     }
                 }
 
-                if (tmp == "") {
-
+                if (tmp.equals("")) {
                     if (manager.getPeerManager() != null
                             && manager.getPeerManager().isSuperSeedMode()) {
                         tmp = "Super Seeding ";
                     } else {
-//					tmp = "Seeding";
                         tmp = "Completed";
                     }
                 }
@@ -167,11 +159,7 @@ public class Download {
 
         downloadingPausedCompleteFlag = getFlag();
 
-        if (previousState != dm.getState()) {
-            stateChanged = true;
-        } else {
-            stateChanged = false;
-        }
+        stateChanged = previousState != dm.getState();
         previousState = dm.getState();
     }
 

@@ -15,6 +15,7 @@ import net.thangbui.downloader.domain.Link;
 import net.thangbui.downloader.ui.MainUI;
 import net.thangbui.downloader.ui.component.ThreeStatusLabel;
 
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -46,7 +47,7 @@ public class QuickSearchPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jPanelCatergoriesPanel = new javax.swing.JPanel();
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", Font.BOLD, 16)); // NOI18N
         jLabel1.setText("Quickly search for item using following category :");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
@@ -109,7 +110,7 @@ public class QuickSearchPanel extends javax.swing.JPanel {
                 labelLink.doLayout();
                 catergoryPanel.LinkPanel2.add(labelLink);
             }
-            Item.setLableIcon((Integer) CATEGORY_MAP.get(c.name.toLowerCase()), catergoryPanel.jLabelCategoryIcon);
+            Item.setLableIcon(CATEGORY_MAP.get(c.name.toLowerCase()), catergoryPanel.jLabelCategoryIcon);
             jPanelCatergoriesPanel.add(catergoryPanel);
         }
         initialized = true;

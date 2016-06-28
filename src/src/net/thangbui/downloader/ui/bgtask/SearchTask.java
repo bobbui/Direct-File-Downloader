@@ -15,8 +15,8 @@ import javax.swing.*;
 
 public class SearchTask extends SwingWorker<Void, String> {
 
-    private static Logger  LOG           = Logger.getLogger(SearchTask.class);
-    String seachKey;
+    private static final Logger LOG = Logger.getLogger(SearchTask.class);
+    private final String seachKey;
     private        boolean isQuickSearch = false;
 
     public SearchTask(String seachKey, boolean isQuickSearch) {

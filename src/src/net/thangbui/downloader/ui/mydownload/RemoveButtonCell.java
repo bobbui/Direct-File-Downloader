@@ -12,7 +12,7 @@
  */
 package net.thangbui.downloader.ui.mydownload;
 
-public class RemoveButtonCell extends javax.swing.JPanel {
+class RemoveButtonCell extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public  javax.swing.JButton   jButtonDelete;

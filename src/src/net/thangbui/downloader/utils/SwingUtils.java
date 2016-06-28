@@ -48,7 +48,7 @@ public class SwingUtils {
 //        UIManager.put("Table.alternateRowColor", new Color(159,203,64));
     }
 
-    public static void setLAF(String LAFName) throws ClassNotFoundException,
+    private static void setLAF(String LAFName) throws ClassNotFoundException,
             IllegalAccessException, UnsupportedLookAndFeelException,
             InstantiationException {
         for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager
@@ -60,7 +60,7 @@ public class SwingUtils {
         }
     }
 
-    public static void openWebpage(URI uri) throws IOException {
+    private static void openWebpage(URI uri) throws IOException {
         Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop()
                 : null;
         if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
@@ -73,7 +73,7 @@ public class SwingUtils {
         openWebpage(new URI(url));
     }
 
-    public static void setFontStyle(Component c, int fontStyle) {
+    private static void setFontStyle(Component c, int fontStyle) {
         Font newLabelFont = new Font(c.getFont().getName(), fontStyle, c
                 .getFont().getSize());
         c.setFont(newLabelFont);

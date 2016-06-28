@@ -13,6 +13,7 @@ import net.thangbui.downloader.domain.Item;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,14 +22,14 @@ import java.util.List;
  */
 public class SearchResultPanel extends javax.swing.JPanel {
 
-    public List<Item> datas = new ArrayList<Item>();
+    private List<Item> datas = new ArrayList<Item>();
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public  javax.swing.JLabel                             jLabelConnectionError;
-    public  javax.swing.JLabel                             jLabelNoResultMessage;
-    private TableCellRenderer iconCell;
-    private javax.swing.JScrollPane                        jScrollPaneResult;
-    private javax.swing.JTable                             jTable1;
-    private net.thangbui.downloader.ui.search.SearchFilter searchFilterPanel;
+    private       javax.swing.JLabel                             jLabelConnectionError;
+    private       javax.swing.JLabel                             jLabelNoResultMessage;
+    private final TableCellRenderer                              iconCell;
+    private       javax.swing.JScrollPane                        jScrollPaneResult;
+    private       javax.swing.JTable                             jTable1;
+    private       net.thangbui.downloader.ui.search.SearchFilter searchFilterPanel;
     /**
      * Creates new form SearchResultPanel
      */
@@ -65,10 +66,10 @@ public class SearchResultPanel extends javax.swing.JPanel {
                         "", "Title", "Size", "Description", ""
                 }
         ) {
-            Class[] types = new Class[]{
+            final Class[] types = new Class[]{
                     java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
-            boolean[] canEdit = new boolean[]{
+            final boolean[] canEdit = new boolean[]{
                     false, false, false, false, true
             };
 
@@ -102,11 +103,11 @@ public class SearchResultPanel extends javax.swing.JPanel {
         jTable1.getColumnModel().getColumn(4).setCellEditor(new DownloadButtonCellRenderer(new JCheckBox()));
         jTable1.getColumnModel().getColumn(4).setCellRenderer(new DownloadButtonCellRenderer(new JCheckBox()));
 
-        jLabelNoResultMessage.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelNoResultMessage.setFont(new java.awt.Font("Tahoma", Font.BOLD, 14)); // NOI18N
         jLabelNoResultMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoResultMessage.setText("Search return no result, please refine your search keyword and try again.");
 
-        jLabelConnectionError.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelConnectionError.setFont(new java.awt.Font("Tahoma", Font.BOLD, 14)); // NOI18N
         jLabelConnectionError.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelConnectionError.setText("Can not connect to search server, please check your internet connection and try again");
 
@@ -146,7 +147,7 @@ public class SearchResultPanel extends javax.swing.JPanel {
             showConnectionErrorMessage();
             return;
         }
-        if (searchResult == null || searchResult.isEmpty()) {
+        if (searchResult.isEmpty()) {
             showNoResultMessage();
             return;
         }
@@ -157,7 +158,7 @@ public class SearchResultPanel extends javax.swing.JPanel {
     }
 
     //when have new search or filter category
-    public void replaceData(List<Item> searchResult) {
+    private void replaceData(List<Item> searchResult) {
         DefaultTableModel defaultTableModel = (DefaultTableModel) jTable1.getModel();
         for (int i = defaultTableModel.getRowCount() - 1; i >= 0; i--) {
             defaultTableModel.removeRow(i);
@@ -245,12 +246,12 @@ public class SearchResultPanel extends javax.swing.JPanel {
         return no;
     }
 
-    public void showConnectionErrorMessage() {
+    private void showConnectionErrorMessage() {
         hideAll();
         jLabelConnectionError.setVisible(true);
     }
 
-    public void showNoResultMessage() {
+    private void showNoResultMessage() {
         hideAll();
         jLabelNoResultMessage.setVisible(true);
     }

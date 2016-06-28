@@ -16,11 +16,11 @@ import java.awt.font.TextAttribute;
 
 public class ThreeStatusLabel extends javax.swing.JPanel {
 
-    public ImageIcon icon;
-    public ImageIcon iconHover;
-    public ImageIcon iconSelected;
+    private ImageIcon          icon;
+    private ImageIcon          iconHover;
+    private ImageIcon          iconSelected;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel jLabel;
+    public  javax.swing.JLabel jLabel;
     Font original;
 
     /**
@@ -42,9 +42,8 @@ public class ThreeStatusLabel extends javax.swing.JPanel {
         return this;
     }
 
-    public ThreeStatusLabel setIconSelectedPath(String path) {
+    public void setIconSelectedPath(String path) {
         iconSelected = new ImageIcon(getClass().getResource(path));
-        return this;
     }
 
     @Override
@@ -133,7 +132,7 @@ public class ThreeStatusLabel extends javax.swing.JPanel {
         jLabel.setForeground(new Color(117, 117, 117));
         SwingUtils.setFontAttribute(jLabel, TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
         jLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        jLabel.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel.setFont(new java.awt.Font("Tahoma", Font.BOLD, 12));
     }
 
     private void setSelected() {

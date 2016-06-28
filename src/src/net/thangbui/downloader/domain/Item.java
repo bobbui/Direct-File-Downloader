@@ -16,27 +16,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Item implements Serializable {
+    private static final Logger LOG = Logger.getLogger(Item.class);
 
-    public static final int    CATEGORY_ALL               = 1;
-    public static final int    CATEGORY_MOVIES            = 2;
-    public static final int    CATEGORY_TV                = 3;
-    public static final int    CATEGORY_MUSIC             = 4;
-    public static final int    CATEGORY_BOOK              = 5;
-    public static final int    CATEGORY_GAMES             = 6;
-    public static final int    CATEGORY_APPS              = 7;
-    public static final int    CATEGORY_OTHER             = 8;
-    public static final int    CATEGORY_XXX               = 9;
-    public static final String CATEGORY_MOVIES_NAME       = "movies";
-    public static final String CATEGORY_TV_NAME           = "tv";
-    public static final String CATEGORY_MUSIC_NAME        = "music";
-    public static final String CATEGORY_BOOK_NAME         = "books";
-    public static final String CATEGORY_GAMES_NAME        = "games";
-    public static final String CATEGORY_APPS_NAME         = "apps";
-    public static final String CATEGORY_XXX_NAME          = "xxx";
-    public static final String CATEGORY_APPLICATIONS_NAME = "applications";
-    public static final String CATEGORY_ANIME_NAME        = "anime";
-    public static final String CATEGORY_OTHER_NAME        = "other";
-    public static final Map    CATEGORY_MAP               = new HashMap() {
+    public static final  int                  CATEGORY_MOVIES            = 2;
+    public static final  int                  CATEGORY_TV                = 3;
+    public static final  int                  CATEGORY_MUSIC             = 4;
+    public static final  int                  CATEGORY_BOOK              = 5;
+    public static final  int                  CATEGORY_GAMES             = 6;
+    public static final  int                  CATEGORY_APPS              = 7;
+    public static final  int                  CATEGORY_OTHER             = 8;
+    public static final  int                  CATEGORY_XXX               = 9;
+    private static final String               CATEGORY_MOVIES_NAME       = "movies";
+    private static final String               CATEGORY_TV_NAME           = "tv";
+    private static final String               CATEGORY_MUSIC_NAME        = "music";
+    private static final String               CATEGORY_BOOK_NAME         = "books";
+    private static final String               CATEGORY_GAMES_NAME        = "games";
+    private static final String               CATEGORY_APPS_NAME         = "apps";
+    private static final String               CATEGORY_XXX_NAME          = "xxx";
+    private static final String               CATEGORY_APPLICATIONS_NAME = "applications";
+    private static final String               CATEGORY_ANIME_NAME        = "anime";
+    private static final String               CATEGORY_OTHER_NAME        = "other";
+    public static final  Map<String, Integer> CATEGORY_MAP               = new HashMap<String, Integer>() {
         {
             put(CATEGORY_MOVIES_NAME, CATEGORY_MOVIES);
             put(CATEGORY_ANIME_NAME, CATEGORY_MOVIES);
@@ -50,7 +50,6 @@ public class Item implements Serializable {
             put(CATEGORY_OTHER_NAME, CATEGORY_OTHER);
         }
     };
-    private static      Logger LOG                        = Logger.getLogger(Item.class);
     public String title;
     public String title_clean;
     public String size;
@@ -83,7 +82,7 @@ public class Item implements Serializable {
 
     public void setCategoryFromCategoryName(String html) {
         try {
-            category = (Integer) CATEGORY_MAP.get(html.toLowerCase());
+            category = CATEGORY_MAP.get(html.toLowerCase());
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error("Can map category for key  " + html + " " + e.getMessage(), e);

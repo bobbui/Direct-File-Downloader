@@ -29,7 +29,7 @@ public class DownloadTask extends SwingWorker<Void, String> {
 
     @Override
     protected Void doInBackground() throws Exception {
-        System.out.println(" Begin to download torrent file");
+        System.out.println(" Begin to download torrent file " + item.torrent_URL);
 
         DownloadController downloadController = new DownloadController();
 
@@ -37,20 +37,16 @@ public class DownloadTask extends SwingWorker<Void, String> {
         try {
             torrentFile = downloadController.getTorrentFile(item);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(MainUI.getInstance(),
-                    "Can find the download link for item " + item.title_clean
-                            + " : " + e.getMessage(), "Error",
-                    JOptionPane.ERROR_MESSAGE);
             e.printStackTrace();
-            LOG.error("Can find the download link for item " + item.title_clean
-                    + " : " + e.getMessage(), e);
+            JOptionPane.showMessageDialog(MainUI.getInstance(), "Can find the download link for item " + item.title_clean + " : " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            LOG.error("Can find the download link for item " + item.title_clean + " : " + e.getMessage(), e);
         }
 
         // TODO: check if a duplicate download file exist
 
         try {
             // add new download
-            downloadController.add(torrentFile, outputFolder);
+            DownloadController.add(torrentFile, outputFolder);
         } catch (Exception e) {
             e.printStackTrace();
             LOG.error("Can find start download for item " + item.title_clean

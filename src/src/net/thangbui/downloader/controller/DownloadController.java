@@ -69,11 +69,11 @@ public class DownloadController {
         Main.core.getGlobalManager().removeDownloadManager(dm);
     }
 
-    public static void stop(DownloadManager dm) throws Exception {
+    public static void stop(DownloadManager dm) {
         dm.stopIt(DownloadManager.STATE_STOPPED, false, false);
     }
 
-    public static void start(DownloadManager dm) throws Exception {
+    public static void start(DownloadManager dm) {
         int state = dm.getState();
 
         if (state != DownloadManager.STATE_STOPPED) {
@@ -91,7 +91,7 @@ public class DownloadController {
 
                 @Override
                 public void performAction() throws Exception {
-                    String URL = item.torrent_URL.indexOf("http") < 0 ? item.torrent_URL.replace("//", "http://") : item.torrent_URL;
+                    String URL = !item.torrent_URL.contains("http") ? item.torrent_URL.replace("//", "http://") : item.torrent_URL;
                     String filePath = new File(SystemProperties.getUserPath()).getAbsolutePath() + "/"
                             + item.title_clean;
                     file = HttpUtils.saveToFile(URL, filePath);

@@ -10,7 +10,6 @@ package net.thangbui.downloader.ui;
 
 import net.thangbui.downloader.constants.Constants;
 import net.thangbui.downloader.domain.Item;
-import net.thangbui.downloader.ui.quicksearch.CategoryPanel;
 import net.thangbui.downloader.ui.bgtask.SearchTask;
 import net.thangbui.downloader.utils.SwingUtils;
 
@@ -31,23 +30,39 @@ import java.util.logging.Logger;
  */
 public class MainUI extends javax.swing.JFrame {
 
-    static List<Image> icons = new ArrayList<Image>();
-    private static MainUI mainUI;
-    public  javax.swing.JPanel                                      jPanelMain;
-    public  net.thangbui.downloader.ui.LoadingPanel                 loadingPanel;
-    public  net.thangbui.downloader.ui.mydownload.MyDownloadPanel   myDownloadPanel;
-    public  net.thangbui.downloader.ui.search.SearchResultPanel     searchResultPanel;
+    private static final List<Image> icons = new ArrayList<Image>();
+    private static MainUI                                                  mainUI;
+    private        javax.swing.JPanel                                      jPanelMain;
+    private        net.thangbui.downloader.ui.LoadingPanel                 loadingPanel;
+    public         net.thangbui.downloader.ui.mydownload.MyDownloadPanel   myDownloadPanel;
+    public         net.thangbui.downloader.ui.search.SearchResultPanel     searchResultPanel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private net.thangbui.downloader.ui.component.ThreeStatusLabel   helpLabel;
-    private javax.swing.JComboBox                                   jComboBoxSelectLanguage;
-    private javax.swing.JPanel                                      jPanelMainMenu;
-    private javax.swing.JTextField                                  jTextFieldSearchKeyword;
-    private net.thangbui.downloader.ui.component.ThreeStatusLabel   myDownloadLabel;
-    private net.thangbui.downloader.ui.component.ThreeStatusLabel   quickSearchLabel;
-    private net.thangbui.downloader.ui.quicksearch.QuickSearchPanel quickSearchPanel;
-    private net.thangbui.downloader.ui.component.ThreeStatusLabel   searchButton;
-    private net.thangbui.downloader.ui.component.ThreeStatusLabel   searchResultLabel;
-    private net.thangbui.downloader.ui.component.ThreeStatusLabel   supportLabel;
+    private        net.thangbui.downloader.ui.component.ThreeStatusLabel   helpLabel;
+    private        javax.swing.JComboBox                                   jComboBoxSelectLanguage;
+    private        javax.swing.JPanel                                      jPanelMainMenu;
+    private        javax.swing.JTextField                                  jTextFieldSearchKeyword;
+    private        net.thangbui.downloader.ui.component.ThreeStatusLabel   myDownloadLabel;
+    private        net.thangbui.downloader.ui.component.ThreeStatusLabel   quickSearchLabel;
+    private        net.thangbui.downloader.ui.quicksearch.QuickSearchPanel quickSearchPanel;
+    private        net.thangbui.downloader.ui.component.ThreeStatusLabel   searchButton;
+    private        net.thangbui.downloader.ui.component.ThreeStatusLabel   searchResultLabel;
+    private        net.thangbui.downloader.ui.component.ThreeStatusLabel   supportLabel;
+    private MouseAdapter openSupport = new MouseAdapter() {
+        @Override
+        public void mouseClicked(MouseEvent me) {
+            super.mouseClicked(me);
+            try {
+                SwingUtils.openWebpage(Constants.URL_SUPPORT);
+            } catch (IOException ex) {
+                Logger.getLogger(MainUI.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            } catch (URISyntaxException ex) {
+                Logger.getLogger(MainUI.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    };
+
     /**
      * Creates new form Main
      */
@@ -270,7 +285,6 @@ public class MainUI extends javax.swing.JFrame {
                 super.mouseClicked(me);
                 hideMainPanel();
                 searchResultPanel.showUp();
-                ;
             }
         });
 
@@ -302,45 +316,14 @@ public class MainUI extends javax.swing.JFrame {
         supportLabel.jLabel.setText("");
         supportLabel.jLabel.setToolTipText("Online Support");
         supportLabel.doLayout();
-        supportLabel.jLabel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent me) {
-                super.mouseClicked(me);
-                try {
-                    SwingUtils.openWebpage(Constants.URL_SUPPORT);
-
-
-                } catch (IOException ex) {
-                    Logger.getLogger(MainUI.class
-                            .getName()).log(Level.SEVERE, null, ex);
-                } catch (URISyntaxException ex) {
-                    Logger.getLogger(MainUI.class
-                            .getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-        });
+        supportLabel.jLabel.addMouseListener(openSupport);
 
         helpLabel.setIconPath("/images/help.png").setIconHoverPath("/images/help_hover.png").setIconSelectedPath("/images/help_hover.png");
         helpLabel.jLabel.setText("");
         helpLabel.jLabel.setToolTipText("Online Help");
         helpLabel.doLayout();
-        helpLabel.jLabel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent me) {
-                super.mouseClicked(me);
-                try {
-                    SwingUtils.openWebpage(Constants.URL_SUPPORT);
 
-
-                } catch (IOException ex) {
-                    Logger.getLogger(MainUI.class
-                            .getName()).log(Level.SEVERE, null, ex);
-                } catch (URISyntaxException ex) {
-                    Logger.getLogger(MainUI.class
-                            .getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-        });
+        helpLabel.jLabel.addMouseListener(openSupport);
     }
 
     private void showQuickSearch() {
@@ -349,18 +332,5 @@ public class MainUI extends javax.swing.JFrame {
         }
 
         quickSearchPanel.setVisible(true);
-
-        Component[] components = quickSearchPanel.jPanelCatergoriesPanel.getComponents();
-        for (Component component : components) {
-            if (component instanceof CategoryPanel) {
-                CategoryPanel categoryPanel = (CategoryPanel) component;
-                System.out.println("\t catergoryPanel :" + getPreferredSize().getWidth() + " : " + getPreferredSize().getWidth());
-                System.out.println("\t catergoryPanel.LinkPanel :"
-                        + categoryPanel.LinkPanel2.getPreferredSize().getWidth() + " : "
-                        + categoryPanel.LinkPanel2.getPreferredSize().getWidth());
-
-//                categoryPanel.LinkPanel.setPreferredSize(categoryPanel.getPreferredSize());
-            }
-        }
     }
 }

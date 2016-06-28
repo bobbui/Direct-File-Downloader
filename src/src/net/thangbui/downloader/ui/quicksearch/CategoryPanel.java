@@ -49,7 +49,7 @@ public class CategoryPanel extends javax.swing.JPanel {
         jLabelCategoryIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/apps.png"))); // NOI18N
 
         categoryName.setBackground(new java.awt.Color(102, 102, 102));
-        categoryName.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        categoryName.setFont(new java.awt.Font("Tahoma", Font.BOLD, 16)); // NOI18N
         categoryName.setForeground(new java.awt.Color(102, 102, 102));
         categoryName.setText("Catergory Name");
 

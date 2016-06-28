@@ -17,7 +17,7 @@ import net.thangbui.downloader.domain.Item;
 /**
  * @author Nguyen Thang
  */
-public class CategoryIconCell extends javax.swing.JPanel {
+class CategoryIconCell extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;

@@ -13,11 +13,11 @@ import java.awt.*;
 
 public class ThreeStatusButton extends javax.swing.JPanel {
 
-    public ImageIcon icon;
-    public ImageIcon iconHover;
-    public ImageIcon iconSelected;
+    private ImageIcon           icon;
+    private ImageIcon           iconHover;
+    private ImageIcon           iconSelected;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jButton;
+    private javax.swing.JButton jButton;
 
     /**
      * Creates new form SearchLabel

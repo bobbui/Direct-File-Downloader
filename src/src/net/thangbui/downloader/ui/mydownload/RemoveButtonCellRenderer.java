@@ -23,12 +23,12 @@ import java.awt.event.ActionListener;
 /**
  * @author Nguyen Thang
  */
-public class RemoveButtonCellRenderer extends CellEditorRender implements
+class RemoveButtonCellRenderer extends CellEditorRender implements
         TableCellRenderer {
 
     private static final Logger LOG = Logger.getLogger(RemoveButtonCellRenderer.class);
-    Download download;
-    private RemoveButtonCell deltl;
+    private       Download         download;
+    private final RemoveButtonCell deltl;
 
     public RemoveButtonCellRenderer(JCheckBox box) {
         super(box);

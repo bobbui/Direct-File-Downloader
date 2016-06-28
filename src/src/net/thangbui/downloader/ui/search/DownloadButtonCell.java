@@ -12,13 +12,15 @@
  */
 package net.thangbui.downloader.ui.search;
 
+import java.awt.*;
+
 /**
  * @author Nguyen Thang
  */
-public class DownloadButtonCell extends javax.swing.JPanel {
+class DownloadButtonCell extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jButtonDelete;
+    private javax.swing.JButton jButtonDelete;
     public javax.swing.JButton jButtonDownload;
 
     public DownloadButtonCell() {
@@ -49,7 +51,7 @@ public class DownloadButtonCell extends javax.swing.JPanel {
             }
         });
 
-        jButtonDelete.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButtonDelete.setFont(new java.awt.Font("Tahoma", Font.BOLD, 12)); // NOI18N
         jButtonDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/remove.png"))); // NOI18N
         jButtonDelete.setMargin(new java.awt.Insets(4, 4, 4, 4));
 

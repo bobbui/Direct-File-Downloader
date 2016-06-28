@@ -8,7 +8,7 @@
 
 package net.thangbui.downloader.ui.mydownload;
 
-public class StopResumeCell extends javax.swing.JPanel {
+class StopResumeCell extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButtonOpen;

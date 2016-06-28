@@ -25,13 +25,13 @@ public class MyDownloadPanel extends javax.swing.JPanel {
 
     private static final Logger LOG = Logger.getLogger(MyDownloadPanel.class);
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public  javax.swing.JTable                                     allDownloadTable;
-    JPanel self;
-    int currentFilter;
-    private List<Download> allDownloads;
-    private List<Download> currentDisplayDownloads;
-    private javax.swing.JScrollPane                                jScrollPane1;
-    private net.thangbui.downloader.ui.mydownload.MyDownloadFilter myDownloadFilter1;
+    private       javax.swing.JTable                                     allDownloadTable;
+    private final JPanel                                                 self;
+    private       int                                                    currentFilter;
+    private       List<Download>                                         allDownloads;
+    private       List<Download>                                         currentDisplayDownloads;
+    private       javax.swing.JScrollPane                                jScrollPane1;
+    private       net.thangbui.downloader.ui.mydownload.MyDownloadFilter myDownloadFilter1;
     public MyDownloadPanel() {
         initComponents();
         self = this;
@@ -65,10 +65,10 @@ public class MyDownloadPanel extends javax.swing.JPanel {
                         "", "Name", "Size", "Status", "", "Speed", "ETA", ""
                 }
         ) {
-            Class[] types = new Class[]{
+            final Class[] types = new Class[]{
                     java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
-            boolean[] canEdit = new boolean[]{
+            final boolean[] canEdit = new boolean[]{
                     true, false, false, false, false, false, false, true
             };
 
@@ -116,7 +116,7 @@ public class MyDownloadPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     // End of variables declaration//GEN-END:variables
 
-    public void updateData() {
+    private void updateData() {
         DefaultTableModel defaultTableModel = (DefaultTableModel) allDownloadTable.getModel();
         for (int i = defaultTableModel.getRowCount() - 1; i >= 0; i--) {
             defaultTableModel.removeRow(i);
@@ -222,7 +222,7 @@ public class MyDownloadPanel extends javax.swing.JPanel {
         return no;
     }
 
-    class UpdateDownloadStatusThread extends Thread {
+    private class UpdateDownloadStatusThread extends Thread {
 
         @Override
         public void run() {
