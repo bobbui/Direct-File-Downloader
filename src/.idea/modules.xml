@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Vuze_Ant.iml" filepath="$PROJECT_DIR$/Vuze_Ant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Direct-File-Downloader.iml" filepath="$PROJECT_DIR$/Direct-File-Downloader.iml" />
     </modules>
   </component>
 </project>
