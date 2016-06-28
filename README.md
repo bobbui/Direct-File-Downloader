@@ -1,6 +1,11 @@
 # Direct-File-Downloader
 A simple, fool-proof file downloader written using Java.
-Underlying using Vuze file download engine.
+Features:
+* Search file from the internet
+* Download file with progress tracking
+* High speed download
+
+Underlying download engine is using Vuze.
 Required Java > 7 to run.
 
 I'm longer maintain it. Anyone interest to contributed can freely modified.
