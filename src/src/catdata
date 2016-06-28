@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="auto">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=""/>
+    <title>Browse and Download Torrents - Kickass Torrents</title>
+    <link rel="stylesheet" type="text/css" href="/content/all-0a5bfe2.css" charset="utf-8" />
+    <link rel="shortcut icon" href="/content/images/favicon.ico" />
+    
+
+    <link rel="apple-touch-icon" href="/content/images/apple-touch-icon.png" />
+
+    <!--[if IE 7]>
+    <link href="/content/css/ie7-0a5bfe2.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <link href="/content/css/ie8.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="/content/js/html5.min-0a5bfe2.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if gte IE 9]>
+    <link href="/content/css/ie9-0a5bfe2.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <script type="text/javascript">
+        +function(S,p,a,r,e,C,l,i,c,k)
+        { S[r]=S[r]||[];S[e]||(S[e]=function(){
+        S[r].push(Array.prototype.slice.call(arguments)) });
+        i=p.createElement(a);c=p.getElementsByTagName(a)[0];
+        i.src=C;i.async=true;c.parentNode.insertBefore(i,c)}
+        (window,document,'script','_scq','sc', '//a.kickass.to/sc-0a5bfe2.js');
+
+        sc('setHost', 'a.kickass.to');
+        sc('setAccount', '_b894d6cb1e370fb9ad89f8d6d99eeb33');
+    
+        var katUser = {};
+        var kat = {
+            release_id: '0a5bfe2',
+            detect_lang: 0,
+            spare_click: 1,
+            mobile: false
+        };
+    </script>
+    <script src="/content/js/all-0a5bfe2.js" type="text/javascript"></script>
+    <script src="/content/js/jquery.ui.touch-punch-0a5bfe2.js" type="text/javascript"></script>
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to RSS feed" href="/?rss=1"/>
+        <meta name="verify-v1" content="YccN/iP28SifHNEFY6u92i0ou3tAegQAIk2OyOJLp1s="/>
+    <meta name="y_key" content="f0b40c3f5fee758f"/>
+    <meta name="google-site-verification" content="C1rNEC4fJIvFoyyccMV2PbuqX3P-SFtlD2MNZ9D2uy0" />
+    <link rel="search" type="application/opensearchdescription+xml" title="KickassTorrents Torrent Search" href="/opensearch.xml"/>
+    <meta property="fb:app_id" content="123694587642603"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</head>
+<body class="mainBody">
+<div id="wrapper">
+    <div id="wrapperInner">
+<div  data-sc-slot="_60318cd4e8d28f6fb76fe34e9bd9c498"></div>
+<div  data-sc-slot="_39ecb76dd457e5ac33776fdf11500d56"></div>
+    <div id="logindiv"></div>
+    <header>
+	<nav id="menu">
+		<a href="/full/" id="logo"></a>
+		<a href="#" id="showHideSearch"><i class="ka ka-zoom"></i></a>
+		<div id="torrentSearch">
+			<form action="/usearch/" method="get" id="searchform" accept-charset="utf-8" onsubmit="return doSearch(this.q.value);">
+				<input id="contentSearch" class="input-big" type="text" name="q" value="" autocomplete="off" placeholder="Search query" /><div id="searchTool"><a title="Advanced search" href="/advanced/" class="ajaxLink"><i class="ka ka-settings"></i></a><button title="search" type="submit" value="" onfocus="this.blur();" onclick="this.blur();"><i class="ka ka-search"></i></button></div>
+			</form>
+		</div>
+        <div  data-sc-slot="_277923e5f9d753c5b0630c28e641790c"></div>
+		<ul id="navigation">
+			
+			<li> <a href="/browse/"> <i class="ka ka-torrent"></i><span class="menuItem">browse</span></a>
+				<ul class="dropdown dp-middle dropdown-msg upper">
+										
+						<li class="topMsg"><a href="/new/"><i class="ka ka16 ka-torrent"></i>latest</a></li>
+										<li class="topMsg"><a href="/movies/"><i class="ka ka16 ka-movie lower"></i>Movies</a></li>
+					<li class="topMsg"><a href="/tv/"><i class="ka ka16 ka-movie lower"></i>TV</a></li>
+					<li class="topMsg"><a href="/music/"><i class="ka ka16 ka-music-note lower"></i>Music</a></li>
+					<li class="topMsg"><a href="/games/"><i class="ka ka16 ka-settings lower"></i>Games</a></li>
+					<li class="topMsg"><a href="/books/"><i class="ka ka16 ka-bookmark"></i>Books</a></li>
+					<li class="topMsg"><a href="/applications/"><i class="ka ka16 ka-settings lower"></i>Apps</a></li>
+					<li class="topMsg"><a href="/anime/"><i class="ka ka16 ka-movie lower"></i>Anime</a></li>
+					<li class="topMsg"><a href="/other/"><i class="ka ka16 ka-torrent"></i>Other</a></li>
+											<li class="topMsg"><a href="/xxx/"><i class="ka ka16 ka-delete"></i>XXX</a></li>
+									</ul>
+			</li>
+			</li>
+			<li><a data-nop href="/community/"> <i class="ka ka-community"></i><span class="menuItem">Community</span></a>
+			<li><a data-nop href="/blog/"><i class="ka ka-rss lower"></i><span class="menuItem">Blog</span></a></li>
+			<li><a data-nop href="/faq/"><i class="ka ka-faq lower"></i><span class="menuItem">FAQ</span></a></li>
+			</li>
+			
+			<li> <a data-nop href="/auth/login/" class="ajaxLink"><i class="ka ka-user"></i><span class="menuItem">Register / Sign In</span></a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="pusher"></div>
+<div class="mainpart">
+    
+
+	<div class="spareBlock hzSpare">
+    <div class="legend">Advertising (<a href="/auth/login/register/" class="ajaxLink removeAdv" title="Login or register to remove advertising">remove</a>)</div>
+    <div  data-sc-slot="_b77c3599a877a4e9d6097b83ec9f23bb" data-sc-params="{ 'searchQuery': '' }"></div>
+</div>
+
+<div class="margauto width900px textcontent">
+
+<br />
+<h2><a href="/movies/">Movies</a>
+	<div class="smallButtonsline">
+		
+					<a class="siteButton smallButton" href="/movies/genre/"><span>by genre</span></a>
+			<a class="siteButton smallButton" href="/movies/actors/"><span>by actor</span></a>
+			&nbsp;
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+        <a class="plain" href="/3d-movies/">3D Movies</a>, 	    <a class="plain" href="/music-videos/">Music videos</a>, 	    <a class="plain" href="/movie-clips/">Movie clips</a>, 	    <a class="plain" href="/handheld-movies/">Handheld</a>, 	    <a class="plain" href="/ipad-movies/">iPad</a>, 	    <a class="plain" href="/highres-movies/">Highres Movies</a>, 	    <a class="plain" href="/ultrahd/">UltraHD</a>, 	    <a class="plain" href="/bollywood/">Bollywood</a>, 	    <a class="plain" href="/concerts/">Concerts</a>, 	    <a class="plain" href="/dubbed-movies/">Dubbed Movies</a>, 	    <a class="plain" href="/asian/">Asian</a>, 	    <a class="plain" href="/animation/">Animation</a>, 	    <a class="plain" href="/documentary/">Documentary</a>, 	    <a class="plain" href="/academic-movies/">Academic Movies</a>, 	    <a class="plain" href="/sport-videos/">Sport</a>, 	    <a class="plain" href="/trailer/">Trailer</a>, 	    <a class="plain" href="/other-movies/">Other Movies</a>	<br/>
+
+    <h5 class="lightgrey">By genres:</h5>
+    		<a class="plain" title="15395" href="/movies/genre/action/">Action</a>,     		<a class="plain" title="8" href="/movies/genre/adult/">Adult</a>,     		<a class="plain" title="10311" href="/movies/genre/adventure/">Adventure</a>,     		<a class="plain" title="4209" href="/movies/genre/animation/">Animation</a>,     		<a class="plain" title="1604" href="/movies/genre/biography/">Biography</a>,     		<a class="plain" title="16375" href="/movies/genre/comedy/">Comedy</a>,     		<a class="plain" title="8933" href="/movies/genre/crime/">Crime</a>,     		<a class="plain" title="3902" href="/movies/genre/documentary/">Documentary</a>,     		<a class="plain" title="24968" href="/movies/genre/drama/">Drama</a>,     		<a class="plain" title="6342" href="/movies/genre/family/">Family</a>,     		<a class="plain" title="7395" href="/movies/genre/fantasy/">Fantasy</a>,     		<a class="plain" title="210" href="/movies/genre/film-noir/">Film Noir</a>,     		<a class="plain" title="41" href="/movies/genre/game-show/">Game Show</a>,     		<a class="plain" title="1958" href="/movies/genre/history/">History</a>,     		<a class="plain" title="8272" href="/movies/genre/horror/">Horror</a>,     		<a class="plain" title="2379" href="/movies/genre/music/">Music</a>,     		<a class="plain" title="1227" href="/movies/genre/musical/">Musical</a>,     		<a class="plain" title="5393" href="/movies/genre/mystery/">Mystery</a>,     		<a class="plain" title="60" href="/movies/genre/news/">News</a>,     		<a class="plain" title="131" href="/movies/genre/reality-tv/">Reality Tv</a>,     		<a class="plain" title="9733" href="/movies/genre/romance/">Romance</a>,     		<a class="plain" title="7400" href="/movies/genre/sci-fi/">Sci Fi</a>,     		<a class="plain" title="2760" href="/movies/genre/short/">Short</a>,     		<a class="plain" title="1352" href="/movies/genre/sport/">Sport</a>,     		<a class="plain" title="57" href="/movies/genre/talk-show/">Talk Show</a>,     		<a class="plain" title="18752" href="/movies/genre/thriller/">Thriller</a>,     		<a class="plain" title="2850" href="/movies/genre/war/">War</a>,     		<a class="plain" title="1402" href="/movies/genre/western/">Western</a>        <br>
+    <div  data-sc-slot="_60524bd9fe59a88471d5dc9c469a1cc6"></div>
+</div>
+
+<br />
+<h2><a href="/tv/">TV</a>
+	<div class="smallButtonsline">
+		
+					<a class="siteButton smallButton" href="/tv/show/"><span>by show</span></a>
+			<a class="siteButton smallButton" href="/tv/genre/"><span>by genre</span></a>
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By genres:</h5>
+			<a class="plain" title="2375" href="/tv/genre/action/">Action</a>,      		<a class="plain" title="1763" href="/tv/genre/adventure/">Adventure</a>,      		<a class="plain" title="475" href="/tv/genre/animation-general/">Animation General</a>,      		<a class="plain" title="233" href="/tv/genre/animation-general/">Animation-General</a>,      		<a class="plain" title="735" href="/tv/genre/anime/">Anime</a>,      		<a class="plain" title="229" href="/tv/genre/anthology/">Anthology</a>,      		<a class="plain" title="1436" href="/tv/genre/celebrities/">Celebrities</a>,      		<a class="plain" title="1003" href="/tv/genre/children/">Children</a>,      		<a class="plain" title="4492" href="/tv/genre/comedy/">Comedy</a>,      		<a class="plain" title="273" href="/tv/genre/competition/">Competition</a>,      		<a class="plain" title="292" href="/tv/genre/cooking-food/">Cooking Food</a>,      		<a class="plain" title="335" href="/tv/genre/cooking-food/">Cooking-Food</a>,      		<a class="plain" title="1629" href="/tv/genre/crime/">Crime</a>,      		<a class="plain" title="259" href="/tv/genre/current-events/">Current-Events</a>,      		<a class="plain" title="314" href="/tv/genre/discovery-science/">Discovery Science</a>,      		<a class="plain" title="377" href="/tv/genre/discovery-science/">Discovery-Science</a>,      		<a class="plain" title="5362" href="/tv/genre/drama/">Drama</a>,      		<a class="plain" title="1341" href="/tv/genre/educational/">Educational</a>,      		<a class="plain" title="4629" href="/tv/genre/family/">Family</a>,      		<a class="plain" title="521" href="/tv/genre/fantasy/">Fantasy</a>,      		<a class="plain" title="1276" href="/tv/genre/history/">History</a>,      		<a class="plain" title="222" href="/tv/genre/horror-supernatural/">Horror Supernatural</a>,      		<a class="plain" title="287" href="/tv/genre/how-to-do-it-yourself/">How To Do It Yourself</a>,      		<a class="plain" title="356" href="/tv/genre/how-to-do-it-yourself/">How-To-Do-It-Yourself</a>,      		<a class="plain" title="512" href="/tv/genre/interview/">Interview</a>,      		<a class="plain" title="2395" href="/tv/genre/lifestyle/">Lifestyle</a>,      		<a class="plain" title="347" href="/tv/genre/medical/">Medical</a>,      		<a class="plain" title="243" href="/tv/genre/military-war/">Military-War</a>,      		<a class="plain" title="1154" href="/tv/genre/music/">Music</a>,      		<a class="plain" title="854" href="/tv/genre/mystery/">Mystery</a>,      		<a class="plain" title="224" href="/tv/genre/politics/">Politics</a>,      		<a class="plain" title="346" href="/tv/genre/romance-dating/">Romance Dating</a>,      		<a class="plain" title="592" href="/tv/genre/romance-dating/">Romance-Dating</a>,      		<a class="plain" title="544" href="/tv/genre/sci-fi/">Sci Fi</a>,      		<a class="plain" title="327" href="/tv/genre/sketch-improv/">Sketch Improv</a>,      		<a class="plain" title="303" href="/tv/genre/soaps/">Soaps</a>,      		<a class="plain" title="967" href="/tv/genre/sports/">Sports</a>,      		<a class="plain" title="1167" href="/tv/genre/talent/">Talent</a>,      		<a class="plain" title="394" href="/tv/genre/teens/">Teens</a>,      		<a class="plain" title="623" href="/tv/genre/thriller/">Thriller</a>,      		<a class="plain" title="818" href="/tv/genre/travel/">Travel</a>,      		<a class="plain" title="271" href="/tv/genre/wildlife/">Wildlife</a>     </div>
+
+<br />
+<h2><a href="/music/">Music</a>
+	<div class="smallButtonsline">
+		
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+        <a class="plain" href="/mp3/">Mp3</a>, 	    <a class="plain" href="/aac/">AAC</a>, 	    <a class="plain" href="/lossless/">Lossless</a>, 	    <a class="plain" href="/transcode/">Transcode</a>, 	    <a class="plain" href="/soundtrack/">Soundtrack</a>, 	    <a class="plain" href="/radio-shows/">Radio Shows</a>, 	    <a class="plain" href="/karaoke/">Karaoke</a>, 	    <a class="plain" href="/classic/">Classic</a>, 	    <a class="plain" href="/other-music/">Other Music</a>	<br />
+</div>
+
+<br />
+<h2><a href="/games/">Games</a>
+	<div class="smallButtonsline">
+		
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+    		<a class="plain" href="/windows-games/">Windows</a>, 			<a class="plain" href="/mac-games/">Mac</a>, 			<a class="plain" href="/linux-games/">Linux</a>, 			<a class="plain" href="/ps2/">PS2</a>, 			<a class="plain" href="/xbox360/">XBOX360</a>, 			<a class="plain" href="/xbox-one/">Xbox ONE</a>, 			<a class="plain" href="/wii/">Wii</a>, 			<a class="plain" href="/handheld-games/">Handheld</a>, 			<a class="plain" href="/nds/">NDS</a>, 			<a class="plain" href="/psp/">PSP</a>, 			<a class="plain" href="/ps3/">PS3</a>, 			<a class="plain" href="/ps4/">PS4</a>, 			<a class="plain" href="/ps-vita/">PS Vita</a>, 			<a class="plain" href="/ios-games/">iOS</a>, 			<a class="plain" href="/android-games/">Android</a>, 			<a class="plain" href="/cheats/">Cheats</a>, 			<a class="plain" href="/other-games/">Other Games</a>	</div>
+
+<br />
+<h2><a href="/applications/">Applications</a>
+	<div class="smallButtonsline">
+		
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+    		<a class="plain" href="/windows/">Windows</a>, 			<a class="plain" href="/mac-software/">Mac</a>, 			<a class="plain" href="/unix/">UNIX</a>, 			<a class="plain" href="/linux/">Linux</a>, 			<a class="plain" href="/ios/">iOS</a>, 			<a class="plain" href="/android/">Android</a>, 			<a class="plain" href="/handheld-applications/">Handheld</a>, 			<a class="plain" href="/other-applications/">Other Applications</a>	</div>
+
+<br />
+<h2><a href="/books/">Books</a>
+	<div class="smallButtonsline">
+		
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+        <a class="plain" href="/ebooks/">Ebooks</a>, 	    <a class="plain" href="/comics/">Comics</a>, 	    <a class="plain" href="/manga/">Manga</a>, 	    <a class="plain" href="/magazines/">Magazines</a>, 	    <a class="plain" href="/textbooks/">Textbooks</a>, 	    <a class="plain" href="/fiction/">Fiction</a>, 	    <a class="plain" href="/non-fiction/">Non-fiction</a>, 	    <a class="plain" href="/audio-books/">Audio books</a>, 	    <a class="plain" href="/academic/">Academic</a>, 	    <a class="plain" href="/poetry/">Poetry</a>, 	    <a class="plain" href="/newspapers/">Newspapers</a>, 	    <a class="plain" href="/programming/">Programming</a>, 	    <a class="plain" href="/medical/">Medical</a>, 	    <a class="plain" href="/cooking/">Cooking</a>, 	    <a class="plain" href="/sport-books/">Sport</a>, 	    <a class="plain" href="/other-books/">Other Books</a>	<br/>
+    <h5 class="lightgrey">By genres:</h5>
+        <a class="plain" href="/books/genre/arts_photography/">Arts Photography</a>,         <a class="plain" href="/books/genre/biographies_memoirs/">Biographies Memoirs</a>,         <a class="plain" href="/books/genre/business_investing/">Business Investing</a>,         <a class="plain" href="/books/genre/childrens_books/">Childrens Books</a>,         <a class="plain" href="/books/genre/childrens_books_science_fiction_fantasy_mys/">Childrens Books Science Fiction Fantasy Mys</a>,         <a class="plain" href="/books/genre/comics_graphic_novels/">Comics Graphic Novels</a>,         <a class="plain" href="/books/genre/comics_graphic_novels_manga/">Comics Graphic Novels Manga</a>,         <a class="plain" href="/books/genre/comics_graphic_novels_publishers_dc/">Comics Graphic Novels Publishers Dc</a>,         <a class="plain" href="/books/genre/comics_graphic_novels_publishers_marvel/">Comics Graphic Novels Publishers Marvel</a>,         <a class="plain" href="/books/genre/comics_graphic_novels_science_fiction/">Comics Graphic Novels Science Fiction</a>,         <a class="plain" href="/books/genre/comics_graphic_novels_superheroes/">Comics Graphic Novels Superheroes</a>,         <a class="plain" href="/books/genre/computers_internet/">Computers Internet</a>,         <a class="plain" href="/books/genre/computers_internet_programming/">Computers Internet Programming</a>,         <a class="plain" href="/books/genre/cooking_food_wine/">Cooking Food Wine</a>,         <a class="plain" href="/books/genre/education_reference/">Education Reference</a>,         <a class="plain" href="/books/genre/electronic_books/">Electronic Books</a>,         <a class="plain" href="/books/genre/fiction/">Fiction</a>,         <a class="plain" href="/books/genre/fiction_classics/">Fiction Classics</a>,         <a class="plain" href="/books/genre/fiction_contemporary/">Fiction Contemporary</a>,         <a class="plain" href="/books/genre/fiction_genre_action_adventure/">Fiction Genre Action Adventure</a>,         <a class="plain" href="/books/genre/fiction_genre_historical/">Fiction Genre Historical</a>,         <a class="plain" href="/books/genre/fiction_genre_horror/">Fiction Genre Horror</a>,         <a class="plain" href="/books/genre/fiction_literary/">Fiction Literary</a>,         <a class="plain" href="/books/genre/health_mind_body/">Health Mind Body</a>,         <a class="plain" href="/books/genre/health_mind_body_psychology_counseling/">Health Mind Body Psychology Counseling</a>,         <a class="plain" href="/books/genre/history_world/">History World</a>,         <a class="plain" href="/books/genre/home_garden_crafts_hobbies/">Home Garden Crafts Hobbies</a>,         <a class="plain" href="/books/genre/love_stories/">Love Stories</a>,         <a class="plain" href="/books/genre/medicine/">Medicine</a>,         <a class="plain" href="/books/genre/mystery_thrillers/">Mystery Thrillers</a>,         <a class="plain" href="/books/genre/mystery_thriller_suspense_thrillers/">Mystery Thriller Suspense Thrillers</a>,         <a class="plain" href="/books/genre/nonfiction_education/">Nonfiction Education</a>,         <a class="plain" href="/books/genre/nonfiction_social_sciences/">Nonfiction Social Sciences</a>,         <a class="plain" href="/books/genre/professional_technical_engineering/">Professional Technical Engineering</a>,         <a class="plain" href="/books/genre/reference/">Reference</a>,         <a class="plain" href="/books/genre/religion_spirituality/">Religion Spirituality</a>,         <a class="plain" href="/books/genre/romance/">Romance</a>,         <a class="plain" href="/books/genre/romance_contemporary/">Romance Contemporary</a>,         <a class="plain" href="/books/genre/science/">Science</a>,         <a class="plain" href="/books/genre/science_fiction_fantasy/">Science Fiction Fantasy</a>,         <a class="plain" href="/books/genre/teens/">Teens</a>,         <a class="plain" href="/books/genre/teens_science_fiction_fantasy/">Teens Science Fiction Fantasy</a>    </div>
+
+<br />
+<h2><a href="/anime/">Anime</a>
+	<div class="smallButtonsline">
+		
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+        <a class="plain" href="/amv/">Anime Music Video</a>, 	    <a class="plain" href="/english-translated/">English-translated</a>, 	    <a class="plain" href="/anime-movie/">Movie</a>, 	    <a class="plain" href="/other-anime/">Other Anime</a>	<br/>
+<h5 class="lightgrey">By genres:</h5>
+<a class="plain" href="/anime/genre/action/">Action</a>, <a class="plain" href="/anime/genre/adventure/">Adventure</a>, <a class="plain" href="/anime/genre/angst/">Angst</a>, <a class="plain" href="/anime/genre/asia/">Asia</a>, <a class="plain" href="/anime/genre/calling-your-attacks/">Calling Your Attacks</a>, <a class="plain" href="/anime/genre/comedy/">Comedy</a>, <a class="plain" href="/anime/genre/coming-of-age/">Coming Of Age</a>, <a class="plain" href="/anime/genre/contemporary-fantasy/">Contemporary Fantasy</a>, <a class="plain" href="/anime/genre/daily-life/">Daily Life</a>, <a class="plain" href="/anime/genre/earth/">Earth</a>, <a class="plain" href="/anime/genre/ecchi/">Ecchi</a>, <a class="plain" href="/anime/genre/fantasy/">Fantasy</a>, <a class="plain" href="/anime/genre/fantasy-world/">Fantasy World</a>, <a class="plain" href="/anime/genre/future/">Future</a>, <a class="plain" href="/anime/genre/game/">Game</a>, <a class="plain" href="/anime/genre/harem/">Harem</a>, <a class="plain" href="/anime/genre/high-school/">High School</a>, <a class="plain" href="/anime/genre/japan/">Japan</a>, <a class="plain" href="/anime/genre/magic/">Magic</a>, <a class="plain" href="/anime/genre/manga/">Manga</a>, <a class="plain" href="/anime/genre/martial-arts/">Martial Arts</a>, <a class="plain" href="/anime/genre/mecha/">Mecha</a>, <a class="plain" href="/anime/genre/military/">Military</a>, <a class="plain" href="/anime/genre/new/">New</a>, <a class="plain" href="/anime/genre/novel/">Novel</a>, <a class="plain" href="/anime/genre/nudity/">Nudity</a>, <a class="plain" href="/anime/genre/past/">Past</a>, <a class="plain" href="/anime/genre/piloted-robot/">Piloted Robot</a>, <a class="plain" href="/anime/genre/plot-continuity/">Plot Continuity</a>, <a class="plain" href="/anime/genre/present/">Present</a>, <a class="plain" href="/anime/genre/romance/">Romance</a>, <a class="plain" href="/anime/genre/school-life/">School Life</a>, <a class="plain" href="/anime/genre/sci-fi/">Sci Fi</a>, <a class="plain" href="/anime/genre/seinen/">Seinen</a>, <a class="plain" href="/anime/genre/shoujo/">Shoujo</a>, <a class="plain" href="/anime/genre/shounen/">Shounen</a>, <a class="plain" href="/anime/genre/slapstick/">Slapstick</a>, <a class="plain" href="/anime/genre/stereotypes/">Stereotypes</a>, <a class="plain" href="/anime/genre/super-power/">Super Power</a>, <a class="plain" href="/anime/genre/swordplay/">Swordplay</a>, <a class="plain" href="/anime/genre/tragedy/">Tragedy</a>, <a class="plain" href="/anime/genre/violence/">Violence</a></div>
+
+<br />
+<h2><a href="/other/">Other</a>
+	<div class="smallButtonsline">
+		
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+    		<a class="plain" href="/pictures/">Pictures</a>, 			<a class="plain" href="/sound-clips/">Sound clips</a>, 			<a class="plain" href="/covers/">Covers</a>, 			<a class="plain" href="/wallpapers/">Wallpapers</a>, 			<a class="plain" href="/tutorials/">Tutorials</a>, 			<a class="plain" href="/subtitles/">Subtitles</a>, 			<a class="plain" href="/fonts/">Fonts</a>, 			<a class="plain" href="/unsorted/">Unsorted</a>	</div>
+
+<br />
+<h2><a href="/xxx/">XXX</a>
+	<div class="smallButtonsline">
+		
+			</div>
+</h2>
+
+<div class="botmarg10px">
+    <h5 class="lightgrey">By categories:</h5>
+    		<a class="plain" href="/xxx-video/">Video</a>, 			<a class="plain" href="/xxx-hd-video/">HD Video</a>, 			<a class="plain" href="/xxx-ultrahd/">UltraHD</a>, 			<a class="plain" href="/xxx-pictures/">Pictures</a>, 			<a class="plain" href="/xxx-magazines/">Magazines</a>, 			<a class="plain" href="/xxx-books/">Books</a>, 			<a class="plain" href="/hentai/">Hentai</a>, 			<a class="plain" href="/xxx-games/">XXX Games</a>, 			<a class="plain" href="/other-xxx/">Other XXX</a>	</div>
+
+</div>
+</div>
+<div id="translate_site" style="display:none">
+    <h3>Select Your Language</h3>
+    <div class="textcontent">
+        <div style="line-height:140%;-moz-column-width: 12em; -moz-columns: 12em; -webkit-columns: 12em; columns:12em;">
+            <ul>
+                                <li class="current_lang"><a href="#" onclick="setLanguage('en', '.kat.cr');return false;" class="plain"><strong>English</strong></a></li>
+                                <li><a href="#" onclick="setLanguage('af', '.kat.cr');return false;" class="plain">Afrikaans</a></li>
+                                <li><a href="#" onclick="setLanguage('al', '.kat.cr');return false;" class="plain">Albanian</a></li>
+                                <li><a href="#" onclick="setLanguage('arr', '.kat.cr');return false;" class="plain">Arabic</a></li>
+                                <li><a href="#" onclick="setLanguage('ar', '.kat.cr');return false;" class="plain">Arabic (Modern)</a></li>
+                                <li><a href="#" onclick="setLanguage('eu', '.kat.cr');return false;" class="plain">Basque</a></li>
+                                <li><a href="#" onclick="setLanguage('bn', '.kat.cr');return false;" class="plain">Bengali</a></li>
+                                <li><a href="#" onclick="setLanguage('bs', '.kat.cr');return false;" class="plain">Bosnian</a></li>
+                                <li><a href="#" onclick="setLanguage('br', '.kat.cr');return false;" class="plain">Brazilian Portuguese</a></li>
+                                <li><a href="#" onclick="setLanguage('bg', '.kat.cr');return false;" class="plain">Bulgarian</a></li>
+                                <li><a href="#" onclick="setLanguage('ch', '.kat.cr');return false;" class="plain">Chinese Simplified</a></li>
+                                <li><a href="#" onclick="setLanguage('tw', '.kat.cr');return false;" class="plain">Chinese Traditional</a></li>
+                                <li><a href="#" onclick="setLanguage('hr', '.kat.cr');return false;" class="plain">Croatian</a></li>
+                                <li><a href="#" onclick="setLanguage('cz', '.kat.cr');return false;" class="plain">Czech</a></li>
+                                <li><a href="#" onclick="setLanguage('da', '.kat.cr');return false;" class="plain">Danish</a></li>
+                                <li><a href="#" onclick="setLanguage('nl', '.kat.cr');return false;" class="plain">Dutch</a></li>
+                                <li><a href="#" onclick="setLanguage('tl', '.kat.cr');return false;" class="plain">Filipino</a></li>
+                                <li><a href="#" onclick="setLanguage('fi', '.kat.cr');return false;" class="plain">Finnish</a></li>
+                                <li><a href="#" onclick="setLanguage('fr', '.kat.cr');return false;" class="plain">French</a></li>
+                                <li><a href="#" onclick="setLanguage('ka', '.kat.cr');return false;" class="plain">Georgian</a></li>
+                                <li><a href="#" onclick="setLanguage('de', '.kat.cr');return false;" class="plain">German</a></li>
+                                <li><a href="#" onclick="setLanguage('el', '.kat.cr');return false;" class="plain">Greek</a></li>
+                                <li><a href="#" onclick="setLanguage('he', '.kat.cr');return false;" class="plain">Hebrew</a></li>
+                                <li><a href="#" onclick="setLanguage('hi', '.kat.cr');return false;" class="plain">Hindi</a></li>
+                                <li><a href="#" onclick="setLanguage('hu', '.kat.cr');return false;" class="plain">Hungarian</a></li>
+                                <li><a href="#" onclick="setLanguage('id', '.kat.cr');return false;" class="plain">Indonesian</a></li>
+                                <li><a href="#" onclick="setLanguage('it', '.kat.cr');return false;" class="plain">Italian</a></li>
+                                <li><a href="#" onclick="setLanguage('kn', '.kat.cr');return false;" class="plain">Kannada</a></li>
+                                <li><a href="#" onclick="setLanguage('ko', '.kat.cr');return false;" class="plain">Korean</a></li>
+                                <li><a href="#" onclick="setLanguage('lv', '.kat.cr');return false;" class="plain">Latvian</a></li>
+                                <li><a href="#" onclick="setLanguage('lt', '.kat.cr');return false;" class="plain">Lithuanian</a></li>
+                                <li><a href="#" onclick="setLanguage('mk', '.kat.cr');return false;" class="plain">Macedonian</a></li>
+                                <li><a href="#" onclick="setLanguage('ml', '.kat.cr');return false;" class="plain">Malayalam</a></li>
+                                <li><a href="#" onclick="setLanguage('ms', '.kat.cr');return false;" class="plain">Malaysian</a></li>
+                                <li><a href="#" onclick="setLanguage('ne', '.kat.cr');return false;" class="plain">Nepali</a></li>
+                                <li><a href="#" onclick="setLanguage('no', '.kat.cr');return false;" class="plain">Norwegian</a></li>
+                                <li><a href="#" onclick="setLanguage('pr', '.kat.cr');return false;" class="plain">Pirate</a></li>
+                                <li><a href="#" onclick="setLanguage('pl', '.kat.cr');return false;" class="plain">Polish</a></li>
+                                <li><a href="#" onclick="setLanguage('pt', '.kat.cr');return false;" class="plain">Portuguese</a></li>
+                                <li><a href="#" onclick="setLanguage('pa', '.kat.cr');return false;" class="plain">Punjabi</a></li>
+                                <li><a href="#" onclick="setLanguage('ro', '.kat.cr');return false;" class="plain">Romanian</a></li>
+                                <li><a href="#" onclick="setLanguage('ru', '.kat.cr');return false;" class="plain">Russian</a></li>
+                                <li><a href="#" onclick="setLanguage('sr', '.kat.cr');return false;" class="plain">Serbian</a></li>
+                                <li><a href="#" onclick="setLanguage('src', '.kat.cr');return false;" class="plain">Serbian-Cyrillic</a></li>
+                                <li><a href="#" onclick="setLanguage('bsc', '.kat.cr');return false;" class="plain">Serbian-Cyrillic (ijekavica)</a></li>
+                                <li><a href="#" onclick="setLanguage('si', '.kat.cr');return false;" class="plain">Sinhala</a></li>
+                                <li><a href="#" onclick="setLanguage('sk', '.kat.cr');return false;" class="plain">Slovak</a></li>
+                                <li><a href="#" onclick="setLanguage('sl', '.kat.cr');return false;" class="plain">Slovenian</a></li>
+                                <li><a href="#" onclick="setLanguage('es', '.kat.cr');return false;" class="plain">Spanish</a></li>
+                                <li><a href="#" onclick="setLanguage('sv', '.kat.cr');return false;" class="plain">Swedish</a></li>
+                                <li><a href="#" onclick="setLanguage('ta', '.kat.cr');return false;" class="plain">Tamil</a></li>
+                                <li><a href="#" onclick="setLanguage('te', '.kat.cr');return false;" class="plain">Telugu</a></li>
+                                <li><a href="#" onclick="setLanguage('tr', '.kat.cr');return false;" class="plain">Turkish</a></li>
+                                <li><a href="#" onclick="setLanguage('uk', '.kat.cr');return false;" class="plain">Ukrainian</a></li>
+                                <li><a href="#" onclick="setLanguage('ur', '.kat.cr');return false;" class="plain">Urdu</a></li>
+                                <li><a href="#" onclick="setLanguage('vi', '.kat.cr');return false;" class="plain">Vietnamese</a></li>
+                            </ul>
+        </div>
+    </div><!-- div class="textcontent" -->
+</div>
+</div><!--id="main"-->
+</div><!--id="wrap"-->
+
+<footer class="lightgrey">
+	<ul>
+		<li><a class="plain" data-nop href="#translate_site" id="translate_link"><strong>change language</strong></a></li>
+		<li><a href="/rules/" class="lower">rules</a></li>
+        <li><a href="/ideabox/">idea box</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+		<li class="lower"><a href="/achievements/">Achievements</a></li>
+		
+		<li class="lower"><a href="/latest-searches/">Latest Searches</a></li>
+        <li><a href="/request/">torrent requests</a></li>        	</ul>
+	<ul>
+		<li><a href="/about/">about</a></li>
+        		<li><a href="/privacy/">privacy</a></li>
+		<li><a href="/dmca/">dmca</a></li>
+        		<li><a href="/logos/">logos</a></li>
+				<li><a href="/contacts/">contacts</a></li>
+        <li><a href="/api/">api</a></li>
+        <li><a href="https://kastatus.com">KAT status</a></li>
+		
+	</ul>
+        </footer>
+<a class="feedbackButton eventsButtons" href="/issue/create/" id="feedback"><span>Report a bug</span></a>
+<a class="chatButton"><span>Open chat</span></a>
+    <div  data-sc-slot="_673e31f53f8166159b8e996c4124765b"></div>
+        <div  data-sc-slot="_e7050fb15fd39b3e4e99a5be4a57b6ea"></div>
+<script>
+ 
+</script>
+<script type="text/javascript"><!--
+document.write("<a style='display:none;' href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t45.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='0' height='0'><\/a>")
+//--></script>
+
+</body>
+</html>
